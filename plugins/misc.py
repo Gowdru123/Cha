@@ -7,9 +7,9 @@ async def start(bot, message):
     await add_user(message.from_user.id, message.from_user.first_name)
     await message.reply(text=script.START.format(message.from_user.mention),
                         disable_web_page_preview=True,
-                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/yourfindbot?startgroup=true')
-            ],[InlineKeyboardButton("ʜᴇʟᴘ", callback_data="misc_help"),
-                                                            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_about")]]))  
+                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('🍿 Main Update Channe 🍿', url=f'https://t.me/Jn_Entertainment_Movies')
+            ],[InlineKeyboardButton("Youtu.be", url=f'https://youtube.com/@Jnentertainment.?si=SY4C0xstDg77rRTE'),
+                                                            InlineKeyboardButton("Owner 🇮🇳", url=f'https://t.me/jnaneshgowdru')]]))  
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
     await message.reply(text=script.HELP, 
